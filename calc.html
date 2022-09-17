@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calc.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header> <!--Header significa cabeçalho- inicio da pagina - parte de cima -->
+        <h1> Calculadora Simples</h1>
+    </header>
+
+    <div id="form"> <!-- A teg form serve para formular - criar formularios-->
+        <input type="number" id="n1" placeholder=" Digite o primeiro número"><br><br> <!-- id e uma tag unica -->
+        <select id="selector">
+            <option value="+">+</option><!-- Tag option é a que da opção-->
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>        
+        </select><br><br>
+        <input type="number" id="n2" placeholder=" Digite o segundo número"><br><br>
+        <button onclick="calcular()"> Calcular</button>
+    </div>
+    <div>
+        <h3 id="resultado"></h3>
+    </div>
+
+    <p id="me"> Feito por: Daniel Santos</p>   
+    <script src="calc.js"></script>
+</body>
+</html>
